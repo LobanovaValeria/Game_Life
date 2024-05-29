@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>LIFE</title>
+</head>
+<body>
+    <main>
+        <div class="main__container">
+
+            <section class="screen">
+                <button class="btn stop">Остановить развитие</button>
+                <div>
+                    <canvas class="world" width="500" height="500" id="world"></canvas>
+                </div>
+                <p>Время генерации нового поколения: <span class="time">0 мс</span> </p>
+                <p>Количество шагов: <span class="step">0</span> </p>
+            </section>
+
+            <section class="controlPanel">
+                <h1>Генерация новой жизни</h1>
+                <div class="container_inputs">
+                    <div class="container_worldSize">
+                        <label for="worldSize" class="labelSize">Размер мира</label>
+                        <input type="text" class="inputSize" placeholder="Размер" id="worldSize" value="25">
+                    </div>
+                </div>
+                
+                <button class="btn generate">Сгенерировать новые клетки</button>
+                <button class="btn exterminate">Истребить все клетки</button>
+                
+                <button class="btn go">Запуск жизнедеятельности</button>
+            </section>
+
+        </div>
+    </main>
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
